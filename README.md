@@ -1,27 +1,58 @@
-# Codesnippet
+Code Snippet App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+Welcome to the Code Snippet App! This application allows users to register and log in to save their code snippets in a Firebase database. This README will guide you through setting up the project, understanding the code, and running the application.
+Features
 
-## Development server
+    User Registration: Users can create an account using their email and password.
+    User Login: Registered users can log in with their credentials.
+    Save Code Snippets: Logged-in users can save their code snippets to the Firebase database.
+    Retrieve Code Snippets: Users can retrieve their saved snippets from the database.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Prerequisites
 
-## Code scaffolding
+Before running the project, ensure you have the following:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    Node.js and npm installed on your machine.
+    Firebase project set up with Firestore and Authentication enabled.
+    Basic understanding of JavaScript and Firebase.
 
-## Build
+Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+    Clone the Repository:
 
-## Running unit tests
+    sh
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+git clone https://github.com/prajwolkarki/code-snippet-app.git
+cd code-snippet-app
 
-## Running end-to-end tests
+Install Dependencies:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+npm install
 
-## Further help
+Set Up Firebase:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    Go to the Firebase Console.
+    Create a new project (or use an existing one).
+    Enable Email/Password Authentication in the Authentication section.
+    Create a Firestore database.
+
+Add Firebase Configuration:
+
+Create a .env file in the root directory and add your Firebase configuration details:
+
+env
+
+REACT_APP_API_KEY=your_api_key
+REACT_APP_AUTH_DOMAIN=your_auth_domain
+REACT_APP_PROJECT_ID=your_project_id
+REACT_APP_STORAGE_BUCKET=your_storage_bucket
+REACT_APP_MESSAGING_SENDER_ID=your_messaging_sender_id
+REACT_APP_APP_ID=your_app_id
+
+Running the Application
+
+To run the application locally, use:
+
+npm start
+
+This will start the development server, and you can access the app at http://localhost:4200.
