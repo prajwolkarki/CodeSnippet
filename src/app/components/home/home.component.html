@@ -1,0 +1,16 @@
+<div class="home-container">
+    <h1 class="text-2xl font-bold">Welcome to CodeKeep</h1>
+    <p>Your one-stop solution to save and manage code snippets efficiently.</p>
+    <div class="home-buttons">
+        <a routerLink="/register" class="btn">Get Started</a>
+    </div>
+    <h1 class="text-xl font-extrabold">Recent Snippets</h1>
+    <ul class="snippet-list">
+        @for(snippet of snippets;track snippet.id){
+            <li>
+                <a [routerLink]="['/keep',snippet.id]"><h3>{{snippet.title}}</h3></a>
+            </li>
+        }
+    </ul>
+
+</div>

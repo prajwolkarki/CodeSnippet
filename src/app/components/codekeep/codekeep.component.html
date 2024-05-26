@@ -1,0 +1,20 @@
+
+<div class="keep-container">
+    <h2>CodeKeep</h2>
+    <form id="loginForm" [formGroup]="codeKeepForm">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required [formControl]="title">
+            <p id="error-message" [hidden]="title.valid || title.untouched">Enter valid title</p>
+            
+        </div>
+        <div class="form-group">
+            <label for="code">Code</label>
+            <textarea id="code" name="code" required [formControl]="code" rows="8"></textarea>
+            <p id="error-message" [hidden]="code.valid || code.untouched">Enter Valid Code Snippet</p>
+        </div>
+        <button (click)="keep()" [disabled]="codeKeepForm.invalid">Keep</button>
+        <button (click)="reset()" class="btn-red">Reset</button>
+    </form>
+   
+</div>

@@ -1,0 +1,19 @@
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm" [formGroup]="loginForm">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required [formControl]="email">
+            <p id="error-message" [hidden]="email.valid || email.untouched">Enter valid email</p>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required [formControl]="password">
+            <p id="error-message" [hidden]="password.valid || password.untouched">Min length 8</p>
+        </div>
+        <button (click)="login()" [disabled]="loginForm.invalid">Login</button>
+        <button (click)="reset()" class="btn-red">Reset</button>
+    </form>
+   
+</div>
