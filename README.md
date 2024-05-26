@@ -18,10 +18,7 @@ Before running the project, ensure you have the following:
 
 Installation
 
-    Clone the Repository:
-
-    sh
-
+Clone the Repository:
 git clone https://github.com/prajwolkarki/code-snippet-app.git
 cd code-snippet-app
 
