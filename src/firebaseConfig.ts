@@ -1,9 +1,8 @@
 export const firebaseConfig = {
-    apiKey: "AIzaSyA_ORm_F22M9w5CWx0LjikVz4RO7Z8X1ts",
-    authDomain: "codekeep-3e3b3.firebaseapp.com",
-    projectId: "codekeep-3e3b3",
-    storageBucket: "codekeep-3e3b3.appspot.com",
-    messagingSenderId: "498970837556",
-    appId: "1:498970837556:web:f58a2d53a1d0240bf5c061"
-
+  apiKey: "AIzaSyBQmgrUxcX9HydIqRYAlHYstogrpM-guik",
+  authDomain: "codesnippet-2b730.firebaseapp.com",
+  projectId: "codesnippet-2b730",
+  storageBucket: "codesnippet-2b730.firebasestorage.app",
+  messagingSenderId: "809422040176",
+  appId: "1:809422040176:web:8b55ab54a180634b5518b5"
 };
